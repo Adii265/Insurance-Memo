@@ -1,0 +1,288 @@
+<html>
+	<head>
+		<title>
+			Insurance Memo
+		</title>
+	</head>
+	<style>
+	#body
+	{
+		//background-image:url(a7.jpg) center;
+		//background-repeat:no-repeat;
+		//background-size:content;
+		background-color:grey;
+	}
+	#head h1
+	{
+		display:inline;
+		float:left;
+		font-family:'Apple Chancery', cursive;
+		font-weight:100%;
+		//padding:5px;
+		//margin-bottom:5px;
+		margin-left:10px;
+	}
+	#head h3
+	{	
+		display:inline;
+		//padding:10px;
+	}
+	#head ul li
+	{
+		display:inline-block;
+		list-style:none;
+		font-variant: small-caps;
+		font-family:Palatino, URW Palladio L, serif;
+		font-weight:100%;
+		float:right;
+		margin-right:30px;
+		font-size:120%;
+	}
+	#head h2
+	{
+		diplay:inline-block;
+		font-variant: small-caps;
+		font-family:Palatino, URW Palladio L, serif;
+		margin-right:30px;
+		padding-bottom:5px;
+		font-weight:200%;
+		font-size:140%;
+	}
+	#head a:hover
+	{
+		color:white;
+	}
+	#head a:link
+	{
+		color:cornsilk;
+		text-decoration:none;
+	}
+	#head a:visited
+	{
+		color:maroon;
+	}
+	#head a:active
+	{
+		color:darkblue;
+	}
+	.hred
+	{
+		background-color:red;
+		padding:10px 20px 30px 20px;
+	}
+	.hyellow:hover
+	{
+		background-color:yellow;
+		padding:12px 10px 18px 10px;
+	}
+	.hblack:hover
+	{
+		background-color:black;
+		padding:10px 20px 26px 20px;
+	}
+	a:hover
+	{
+		color:white;
+	}
+	body
+	{
+		background-image:url("a7.jpg");
+		background-size:100% 200%;
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	#whole
+	{
+		width:90%;
+		margin-left:50px;
+		margin-top:20px;
+		mrgin-right:50px;
+		//border:1px solid black;
+		//background-color:grey;
+	}
+	#head
+	{
+		height:70px;
+		width:100%;
+		//background-color:blue;
+		border-top:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+	}
+	#break
+	{
+		height:5px;
+		width:100%;
+		background-color:red;
+		border-bottom:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+	}
+	#bottom
+	{
+		height:500px;
+		width:100%
+	}
+	#box4
+	{
+		height:400px;
+		width:42%;
+		border:2px solid black;;
+		margin:5% 30%;
+		border-radius:20px;
+		box-shadow: 2px 2px 2px 2px grey;
+		background:rgba(0,0,0,0.5);
+	}
+	#box4 h2
+	{
+		text-align:center;
+		font-family:'Playball', cursive;
+		margin-top:40px;
+		font-size:50px;
+		color:white;
+	}
+	#box4 h3
+	{
+		text-align:center;
+		font-family:'Playball', cursive;
+		font-size:30px;
+	}
+	#box4 input[type="submit"]
+	{
+		margin: 6% 40%;
+		width:20%;
+		height:8%;
+		background:grey;
+		font-size:20px;
+		border-radius:20px 20px 20px 20px;
+		box-shadow: 2px 2px 2px 2px grey;
+	}
+	.radioo
+	{
+		display:block;
+		position:relative;
+		padding-left:10px;
+		cursor:pointer;
+		font-size:25px;
+		color:white;
+	}
+	#box5
+	{
+		height:400px;
+		width:42%;
+		border:2px solid black;
+		border-radius:20px;
+		margin:5% 30%;
+		box-shadow: 2px 2px 2px 2px grey;
+		background:rgba(0,0,0,0.5);
+	}
+	#box5 h3
+	{
+		text-align:center;
+		font-family:'Playball', cursive;
+		font-size:30px;
+		color:white;
+	}
+	#box5 input[type="text"]
+	{
+		height:40%;
+		width:90%;
+		margin:10px 20px 10px 20px;
+		background:lightgrey;
+	}
+	#box5 input[type="submit"]
+	{
+		margin: 6% 40%;
+		width:20%;
+		height:8%;
+		background:grey;
+		font-size:20px;
+		border-radius:20px 20px 20px 20px;
+		box-shadow: 2px 2px 2px 2px grey;
+	}
+	.drop
+	{
+		position: relative;
+		display: inline-block;
+		
+	}
+	.dropcon
+	{
+		display: none;
+		position: absolute;
+		background-color:darkgrey;
+		min-width: 150px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 10%;
+	}
+	.drop:hover .dropcon
+	{
+		display: block;
+	}
+	</style>
+	<body id="back">
+		<div id="whole">
+			<div id="head">
+				<h1>INSURANCE MEMO</h1>
+				<h3><ul>
+						<li class="drop"><a class="hblack" href="form.html">New Account</a>
+							<div class="dropcon">
+								<a href="#tab">Create ID!</a><br>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="login.html">Login</a>
+							<div class="dropcon">
+								<a href="#box">login</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hred" href="rate.html">Rate Us</a>
+							<div class="dropcon">
+								<a href="#box4">Rate</a><br>
+								<a href="#box5">Feedback</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="contact.html">Contact Us</a>
+						<div class="dropcon">
+								<a href="#box1">Contact</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="index.html">Home</a>
+							<div class="dropcon">
+								<a href="#box2">Contact</a><br>
+								<a href="#box3">Rate</a>
+							</div>
+						</li>
+					</ul>
+				</h3>
+			</div>
+			<div id="break">
+			</div>
+			<div id="bottom">
+				<div id="box4">
+					<h2>Rate from 1 to 5</h2>
+					<form action="ratecomment.php" method="POST">
+					<h3 class="radioo">
+						1<input type="radio"  name="radio" value="1">
+						2<input type="radio"  name="radio" value="2">
+						3<input type="radio"  name="radio" value="3">
+						4<input type="radio"  name="radio" value="4">
+						5<input type="radio" name="radio" value="5">
+						<br>
+						<br>
+					<input type="submit" name="Submit" value="Submit">
+					</h3>
+					</form>
+				</div>
+				<div id="box5">
+					<h3>Your feedback is valuable,
+					Kindly suggest Improvemnts!</h3>
+					<form action="ratecomment.php" method="POST">
+					<input type="text" name="comment"><br>
+					<input type="submit" value="Submit" name="Submit2">
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,309 @@
+<html>
+	<head>
+		<title>
+			Insurance Memo
+		</title>
+	</head>
+	<style>
+	#head h1
+	{
+		display:inline;
+		float:left;
+		font-family:'Apple Chancery', cursive;
+		font-weight:100%;
+		margin-left:10px;
+	}
+	#head h3
+	{	
+		display:inline;
+	}
+	#head ul li
+	{
+		display:inline-block;
+		list-style:none;
+		font-variant: small-caps;
+		font-family:Palatino, URW Palladio L, serif;
+		font-weight:100%;
+		float:right;
+		margin-right:30px;
+		font-size:120%;
+	}
+	#head h2
+	{
+		diplay:inline-block;
+		float:right;
+		font-variant: small-caps;
+		font-family:Palatino, URW Palladio L, serif;
+		margin-right:30px;
+		padding-bottom:5px;
+		font-weight:200%;
+		font-size:140%;
+	}
+	.hred
+	{
+		background-color:red;
+		padding:10px 20px 30px 20px;
+	}
+	.hyellow:hover
+	{
+		background-color:yellow;
+		padding:12px 10px 18px 10px;
+	}
+	.hblack:hover
+	{
+		background-color:black;
+		padding:10px 20px 26px 20px;
+	}
+	#head a:hover
+	{
+		color:white;
+	}
+	#head a:link
+	{
+		color:cornsilk;
+		text-decoration:none;
+	}
+	#head a:visited
+	{
+		color:maroon;
+	}
+	#head a:active
+	{
+		color:darkblue;
+	}
+	body
+	{
+		background-image:url("a7.jpg");
+		background-size:100% 200%;
+		background-repeat:no-repeat;
+		background-position:center;
+		background-blend-mode:saturation;
+	}
+	#whole
+	{
+		width:90%;
+		margin-left:50px;
+		margin-top:20px;
+		mrgin-right:50px;
+	}
+	#head
+	{
+		height:12%;
+		width:100%;
+		border-top:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+	}
+	#break
+	{
+		height:1%;
+		width:100%;
+		background-color:red;
+		border-bottom:1px solid black;
+		border-left:1px solid black;
+		border-right:1px solid black;
+	}
+	#bottom
+	{
+		height:500px;
+		width:100%;
+		//border:1px solid black;
+	}
+	#bottom h1
+	{
+		font-family: 'Cedarville Cursive', cursive;
+		//text-align:left;
+	}
+	#bottom h2
+	{
+		font-family: 'Cedarville Cursive', cursive;
+		text-align:left;
+	}
+	#bottom h3
+	{
+		font-family: 'Cedarville Cursive', cursive;
+		//text-align:left;
+	}
+	//#bottom h4
+	{
+		font-family: 'Cedarville Cursive', cursive;
+		text-align:left;
+	}
+	#box1
+	{
+		float:right;
+		border:1px solid black;
+		margin-top:0px;
+		padding:20px;
+		font-weight:bold;
+		color:cornsilk;
+		box-shadow: 2px 2px 2px 2px #1a1a1a;
+		margin-right:30%;
+		background:rgba(0,0,0,0.7);
+	}
+	#box1 input[type="text"]
+	{
+		border:none;
+		border-bottom:0.5px solid white;
+		background:transparent;
+		outline:none;
+		height:50px;
+		width:50%;
+		font-size:20px;
+		color:cornsilk;
+		font-family: 'Cedarville Cursive', cursive;
+	}
+	#box1 input[type="submit"]
+	{
+		//border:none;
+		//outline:none;
+		height:25px;
+		backround:grey;
+		color:black;
+		font-size:15px;
+		border-radius:20px 20px 20px 20px;
+		font-family: 'Cedarville Cursive', cursive;
+		width:100%;
+		font-family:'Noto Sans',sans-serif;
+		margin-left:80%;
+		margin-top:50px;
+		box-shadow: 2px 2px 2px 2px #1a1a1a;
+	}
+	#box1 input[type="submit"]:hover
+	{
+		cursor:hand;
+		color:black;
+		background:cornsilk;
+	}
+	#box1 a
+	{
+		font-size:20px;
+		line-height:40px;
+		color:darkgrey;
+	}
+	#box1 a:hover
+	{
+		color:grey;
+	}
+	#t1
+	{
+		//border:1px solid black;
+		padding:10px;
+		width:450px;
+		font-family: 'Cedarville Cursive', cursive;
+		font-size:20px;
+		font-weight:bold;
+		color:white;
+	}
+	#tr
+	{
+		border:1px solid black;
+		width:100%;
+		padding:0px;	
+		height:70px;
+	}
+	#th
+	{
+		border:1px solid black;
+		width:100%;
+		padding:20px;
+		text-align:left;
+		height:50px;
+	}
+	#box
+	{
+		//float:left;
+		//border:1px solid black;
+		margin-top:30px;
+		color:#e6e600;
+	}
+	.drop
+	{
+		position: relative;
+		display: inline-block;
+		
+	}
+	.dropcon
+	{
+		display: none;
+		position: absolute;
+		background-color:darkgrey;
+		min-width: 150px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 12px 16px;
+		z-index: 10%;
+	}
+	.drop:hover .dropcon
+	{
+		display: block;
+	}
+	</style>
+	<body>
+		<div id="whole">
+			<div id="head">
+				<h1>INSURANCE MEMO</h1>
+				<h3><ul>
+						<li class="drop"><a class="hblack" href="form.html">New Account</a>
+							<div class="dropcon">
+								<a href="#tab">Create ID!</a><br>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="login.html">Login</a>
+							<div class="dropcon">
+								<a href="#box">login</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="rate.html">Rate Us</a>
+							<div class="dropcon">
+								<a href="#box4">Rate</a><br>
+								<a href="#box5">Feedback</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hred" href="contact.html">Contact Us</a>
+						<div class="dropcon">
+								<a href="#box1">Contact</a>
+							</div>
+						</li>
+						<li class="drop"><a class="hblack" href="index.html">Home</a>
+							<div class="dropcon">
+								<a href="#box2">Contact</a><br>
+								<a href="#box3">Rate</a>
+							</div>
+						</li>
+					</ul>
+				</h3>
+			</div>
+			<div id="break">
+			</div>
+			<div id="bottom">
+				<div id="box"><marquee direction="right">
+					<h1>Contact Us:</h1>
+					<h2>Email at us at:xyz@gmail.com</h2>
+					</marquee>
+				</div>
+				<div id="box1">
+					<h2>For more details contact us:</h2>
+					<form action="contact_data.php" method="POST">
+					<table id="t1">
+						<tr class="row">
+							<td>Name:</td>
+							<td><input type="text" name="name"></td>
+						</tr>
+						<tr class="row">
+							<td>Email:</td>
+							<td><input type="text" name="email"></td>
+						</tr>
+						<tr class="row">
+							<td>Phone Number:</td>
+							<td><input type="text" name="phone"></td>
+						</tr>
+						<tr class="row1">
+							<th><input type="submit" name="submit" value="submit"></th>
+						</tr>
+					</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
